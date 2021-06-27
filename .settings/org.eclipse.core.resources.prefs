@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//GameBox/Client=UTF-8
+encoding//GameBox/Client/CHESS_GUIchess.java=UTF-8
+encoding//GameBox/Client/GameBoxStart.java=UTF-8
+encoding//GameBox/Client/Gobang_SocketThread.java=UTF-8
+encoding//GameBox/Server=UTF-8
+encoding//GameBox/Server/SocketThread.java=UTF-8
