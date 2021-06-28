@@ -110,6 +110,7 @@ public class CHESS_BoardPane extends JPanel implements Runnable {
 							JOptionPane.showConfirmDialog(null, "白方赢了", "提示", JOptionPane.DEFAULT_OPTION);
 							// send
 							send("succ|白方赢了");
+							CHESS_GUIchess.btn_again.setVisible(true);
 							return;
 						}
 						if (index2 == 16) {// 被吃掉的是白色国王
@@ -117,6 +118,7 @@ public class CHESS_BoardPane extends JPanel implements Runnable {
 							JOptionPane.showConfirmDialog(null, "黑方赢了", "提示", JOptionPane.DEFAULT_OPTION);
 							// send
 							send("succ|黑方赢了");
+							CHESS_GUIchess.btn_again.setVisible(true);
 							return;
 						}
 						SetMyTurn(false);// 该对方了
@@ -576,7 +578,7 @@ public class CHESS_BoardPane extends JPanel implements Runnable {
 						else
 							JOptionPane.showConfirmDialog(null, "黑方赢了，你可以重新开始", "你赢了", JOptionPane.DEFAULT_OPTION);
 					}
-					if (commands[2].equals("红方赢了")) {
+					if (commands[2].equals("白方赢了")) {
 						if (LocalPlayer == WHITEPLAYER)
 							JOptionPane.showConfirmDialog(null, "白方赢了，你可以重新开始", "你赢了", JOptionPane.DEFAULT_OPTION);
 						else
